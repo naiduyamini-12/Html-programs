@@ -1,0 +1,114 @@
+/* src/CollegeWebsite.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #f9f9f9;
+  color: rgb(81, 128, 189);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #588686;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #294a9f;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.about {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+footer {
+  background-color: #98395f;
+  color: #0b6c9caa;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #ebb3b3;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(175, 74, 74);
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #004080;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(28, 34, 84);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #004080;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
