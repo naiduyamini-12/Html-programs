@@ -1,0 +1,353 @@
+/* 11
+import java.util.Scanner;
+public class A{
+    public static void main(String[] args) 
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number:");
+            int rows=sc.nextInt();
+        for (int i = 1; i <= rows; i++) 
+{  
+            for (int j = i; j < rows; j++)
+ {
+                System.out.print("  ");
+            }
+            for (int k = 1; k <= (2 * i - 1); k++)
+ {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+*/
+
+
+
+/*12
+
+import java.util.Scanner;
+
+ class A {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int n = sc.nextInt();
+
+        
+        for (int i = 0; i <= n; i++) {
+            for (int j = n - i; j > 0; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < (2 * i + 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = n - i; j > 0; j--) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < (2 * i + 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+*/
+/*13
+  
+import java.util.Scanner;
+ 
+public class A 
+{
+public static void main(String[] args) 
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("enter n:");
+int a= sc.nextInt();
+System.out.println(""); 
+for (int i = 1; i <=a; i++)
+{
+for (int j = 1; j <=a-i; j++)
+{
+System.out.print(" ");
+}
+for (int j = 1; j <= i; j++)
+{
+if (j == 1 || j == i)
+{
+System.out.print("* ");
+}
+else
+{
+System.out.print("  ");
+}
+}
+System.out.println();
+}      
+for(int i=a-1;i>=1;i--)
+{
+for(int j=1;j<=a-i;j++)
+{
+System.out.print(" ");
+}
+for (int j=1;j<=i;j++)
+{
+if (j==1||j==i)
+{
+System.out.print("* ");
+}
+else
+{
+System.out.print("  ");
+}
+}
+System.out.println();
+}
+}
+}
+
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+*/
+/*14
+import java.util.Scanner;
+
+public class A {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the size (e.g., 5): ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || i == n - 1 || j == 0 || j == n - 1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+*****
+*   *
+*   *
+*   *
+*****
+*/
+
+/*15 Xpattern
+import java.util.Scanner;
+
+ class A {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the size (e.g., 7): ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j == i || j == n - i - 1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+*     *
+ *   *
+  * *
+   *
+  * *
+ *   *
+*     *
+
+*/
+/*16 star pattern
+ class A {
+    public static void main(String[] args) {
+        int n = 7;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == n / 2 || j == n / 2)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+   *
+   *
+   *
+*******
+   *
+   *
+   *
+*/
+
+/*17
+import java.util.Scanner;
+
+ class A {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size (odd number like 7): ");
+        int n = sc.nextInt();  
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                
+                if (i == 0 || i == n - 1 || j == 0 || j == n - 1 || i == n / 2 || j == n / 2)
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");  
+            }
+            System.out.println();
+        }
+    }
+}
+
+* * * * * * *
+*     *     *
+*     *     *
+* * * * * * *
+*     *     *
+*     *     *
+* * * * * * *
+
+*/
+
+/*18
+import java.util.Scanner; 
+public class A 
+{
+public static void main(String[] args) 
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter n:"); 
+int a=sc.nextInt();  
+System.out.println(" ");  
+for(int i=a;i>=1;i--)
+{   
+for(int j=1;j<=i;j++)
+{
+if(j== 1||j==i||i==a)
+{
+System.out.print("  * ");
+}
+else
+{
+System.out.print("   ");
+}
+} 
+System.out.println();
+}  
+}
+}
+
+  *   *   *   *   *   *   *
+  *               *
+  *            *
+  *         *
+  *      *
+  *   *
+  *
+*/
+
+/*19
+import java.util.Scanner;
+
+ class A {
+    public static void main(String[] args) 
+    {
+
+        Scanner sc = new Scanner(System.in);
+        int n = 6;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println(i);
+        }
+    }
+}
+0
+*1
+**2
+***3
+****4
+*****5
+*/
+
+
+/*20
+import java.util.Scanner;
+
+ class A {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows (minimum 2): ");
+        int n = sc.nextInt();
+
+        
+        for (int i = 0; i < n; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+
+        
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j == 0 || j == i) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+
+        sc.close();
+    }
+}
+
+* * * * * * *
+* *
+*   *
+*     *
+*       *
+*         *
+*           *
+*/
+
+
