@@ -1,0 +1,17 @@
+public class CopyArray {
+    public static void main(String[] args) {
+        int[] original = {10, 20, 30, 40, 50};  // Original array
+        int[] copy = new int[original.length]; // New array with same size
+
+        // Copying elements
+        for (int i = 0; i < original.length; i++) {
+            copy[i] = original[i];
+        }
+
+        // Printing copied array
+        System.out.print("Copied array: ");
+        for (int i = 0; i < copy.length; i++) {
+            System.out.print(copy[i] + " ");
+        }
+    }
+}
