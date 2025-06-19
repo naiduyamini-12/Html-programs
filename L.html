@@ -1,0 +1,18 @@
+public class RemoveElement {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int removeElement = 30;
+
+        System.out.print("Original array: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+
+        System.out.print("\nArray after removing " + removeElement + ": ");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != removeElement) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+}
