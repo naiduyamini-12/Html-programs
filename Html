@@ -1,0 +1,70 @@
+public class PlusPattern {
+    public static void main(String[] args) {
+        int n = 7;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == n / 2 || j == n / 2)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+import java.util.Scanner;
+
+public class XPattern {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the size (e.g., 7): ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j == i || j == n - i - 1)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
+import java.util.Scanner;
+
+public class Pattern19 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = 6;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println(i);
+        }
+    }
+}
+import java.util.Scanner;
+
+public class PatternHollowSquare {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size (odd number like 7): ");
+        int n = sc.nextInt();  // For your pattern, n = 7
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                // Print star for border and middle row/column
+                if (i == 0 || i == n - 1 || j == 0 || j == n - 1 || i == n / 2 || j == n / 2)
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");  // Print spaces inside
+            }
+            System.out.println();
+        }
+    }
+}
