@@ -96,3 +96,33 @@ System.out.println();
 }
 }*
 /*
+
+import java.util.Scanner;
+
+public class StarVPattern {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows (minimum 2): ");
+        int n = sc.nextInt();
+
+        // Top row
+        for (int i = 0; i < n; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+
+        // Bottom part with two stars
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j == 0 || j == i) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+
+        sc.close();
+    }
+}
