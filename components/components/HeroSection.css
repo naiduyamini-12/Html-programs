@@ -1,0 +1,31 @@
+.hero {
+  background: url('https://www.sviet.edu.in/assets/images/bg-1.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: orange;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  background: transparent;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
